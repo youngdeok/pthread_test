@@ -22,6 +22,7 @@ void* Thread( void *arg )
 int main( void )
 {
     int i, clock_get;
+    printf("here iss53 - develop a new feature\n");
     pthread_t threads[4]; /* 쓰레드 아이디를 위한 변수 */
     
     for ( i=0; i<4; i++ )  /* 쓰레드 생성 */
