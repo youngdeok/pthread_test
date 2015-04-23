@@ -13,7 +13,7 @@ int thread_args[4] = { 0, 1, 2, 3 };  /* 쓰레드가 사용할 인자 */
 /* 쓰레드로 수행할 함수 */
 void* Thread( void *arg )
 {
-    int i;
+    int i, clock_get;
     for ( i=0; i<30; i++ )
         printf( "thread %d: %dth iteration\n", *(int*)arg, i );
     pthread_exit(0);  /* 쓰레드 종료 함수 */
@@ -21,7 +21,13 @@ void* Thread( void *arg )
 //-------------------------------------------------------------
 int main( void )
 {
+<<<<<<< HEAD
     int i;
+=======
+    int i, clock_get;
+    printf("here iss53 - develop a new feature\n");
+    printf("iss53 - done!\n");
+>>>>>>> iss53
     pthread_t threads[4]; /* 쓰레드 아이디를 위한 변수 */
     
     for ( i=0; i<4; i++ )  /* 쓰레드 생성 */
